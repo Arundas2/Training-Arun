@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            .progress-container {
+                width:50%;
+                height:30px;
+                position:relative;
+                background-color:grey;
+            }
+            .progressbar {
+                height:100%;
+                width:0%;
+                position:absolute;
+            }
+            #pbtn {
+                margin:auto;
+                padding:12px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="progress-container">
+            <div class="progressbar" id="progressbar"></div>
+            <br><br><button id="pbtn">progressbar</button>
+            <script src="progressbar.js"></script>
+        </div>
+    </body>
+</html>
+  

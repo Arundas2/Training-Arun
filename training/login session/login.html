@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login page</title>
+        <style>
+            h2 {
+                text-align:center;
+                color:red;
+            }
+            form {
+                width:300px;
+                margin:0 auto;
+                border:1px solid;
+                padding :12px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>login form</h2>
+        <form method="post" action="login.php">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required><br><br>
+            <input type="submit" value="login">
+        </form>
+    </body>
+</html>

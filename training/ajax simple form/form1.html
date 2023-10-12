@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajax form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <style>
+            h1 {
+                text-align:center;
+                color: red;
+            }
+            form {
+                align-items:center;
+                width:400px;
+                margin:auto 0;
+                border:2px solid;
+                padding:12px 20px;
+            }
+            .form-container {
+                justify-content:center;
+                display:flex;
+            }
+            input[type=text] {
+            padding:10px 10px;
+            margin:8px 30px;
+            }
+            input[type=email] {
+            padding: 10px 10px;
+            margin:8px 60px;
+            }
+            #phone{
+            padding:10px 10px;
+            margin:8px 35px;
+            }
+            #address {
+                padding:10px 10px;
+                margin:8px 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>AJAX FORM</h1>
+        <div class="form-container">
+            <form id="myform">
+                <label for="fname">Firstname:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Lastname:</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">Male<br>
+                <input type="radio" id="female" name="gender" value="female">Female<br>
+                <label for="address">Address</label><br>
+                <textarea cols="20" rows="6" name="address"></textarea><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="phone">Phone_no</label>
+                <input type="text" id="phone" name="phone"><br>
+                <input type="submit" id="submit" name="submit" value="submit">
+            </form>
+        </div>
+        <div id="message"></div>
+        <script src="script.js"></script>
+    </body>
+</html>
